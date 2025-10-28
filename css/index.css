@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/* main_banner */
+section {
+  width: 100%;
+}
+
+section main.banner {
+  width: 100%;
+  height: 872px;
+  background-color: #000;
+}
+
+.banner .main_banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .main_banner img {
+  width: 1405px;
+  object-fit: cover;
+  display: block;
+}
+
+article.inside {
+  width: 100%;
+  height: 294px;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+
+}
+
+article.inside .inside_box {
+  color: #fff;
+  padding: 30px 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  transition: all 2s;
+  text-align: center;
+}
+
+.inside_box h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.inside_box p {
+  color: #fff;
+}
+
+.inside_box p.price {
+  color: rgb(242, 223, 255);
+  font-weight: 700;
+  padding-bottom: 24px;
+  margin-top: -10px;
+}
+
+.inside_box p.des {
+  line-height: 1.5;
+}
+
+.main_btn {
+  background-color: #8063ff;
+  border-color: rgba(255, 82, 7, 0);
+  color: #ffffff;
+  border-width: 1px;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 14px 22px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+
+}
+
+article.main_product {
+  width: 100%;
+  background-color: #000;
+  padding: 120px 0;
+}
+
+.main_product .product_wrap {
+  max-width: 1280px;
+
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product_wrap .product_right,
+.product_wrap .product_left {
+  width: 640px;
+  height: 545px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.product_wrap .product_right .product_img {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.product_wrap .product_left .product_img {
+  transform: translateY(50%);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.product_wrap .product_img {
+  width: 610px;
+  height: 356px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product_des {
+  opacity: 0;
+  text-align: right;
+  padding-top: 30px;
+}
+
+.product_des p {
+  color: rgb(249, 249, 249);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+article.glasses {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+article.glasses .glasses_img {
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.glasses_img img {
+  height: 600px;
+  display: block;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.glasses .glasses_title {
+  width: 50%;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.glasses .glasses_title h2 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.glasses_title p {
+  font-size: 18px;
+  margin: 60px 0;
+}
+/* 초이스 */
+article.weekly {
+  padding: 120px 0;
+}
+
+.weekly .weekly_title {
+  text-align: center;
+}
+
+.weekly_title h2 {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 1s;
+
+  font-size: 96px;
+  font-weight: 900;
+  padding-bottom: 80px;
+}
+
+.weekly .weekly_product ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.weekly_product ul .weekly_list {
+  cursor: pointer;
+  text-align: center;
+
+}
+
+.weekly_product ul .weekly_list:hover img {
+  transform: scale(1.2);
+}
+
+.weekly_list .weekly_img {
+  width: 480px;
+  height: 386px;
+  margin-bottom: 80px;
+
+  overflow: hidden;
+}
+
+.weekly_list .ring {
+  padding: 80px;
+  box-sizing: border-box;
+
+}
+
+.weekly_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 1s;
+}
+
+.weekly_list h3 {
+  font-size: 24px;
+  line-height: 1.2;
+
+  margin-bottom: 40px;
+}
+
+.weekly_list p {
+  color: rgb(37, 46, 213);
+  font-weight: 700;
+}
+
+/* 베스트 아이템 */
+
+article.best {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.best .best_title {
+  width: 50%;
+  /* background-color: #ccc; */
+  margin: 0 auto;
+  color: rgb(37, 46, 213);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.best .best_title::before {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #252ed5;
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  z-index: -1;
+}
+
+.best .best_title::after {
+  display: block;
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #252ed5;
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  z-index: -1;
+}
+
+.best_title h2 {
+  font-size: 96px;
+  font-weight: 900;
+}
+
+.best_list {
+  font-size: 15px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper .swiper-wrapper {
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.swiper-slide {
+  width: 572px;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.swiper-slide .best_img {
+  width: 572px;
+  height: 572px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.best_list h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.best_list p {
+  font-size: 15px;
+}
+
+/* ring */
+article.ring {
+  width: 100%;
+  padding: 120px 0;
+}
+
+.ring .ring_wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ring_wrap .ring_img {
+  width: 610px;
+  height: 348px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  transform: translateY(30%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.ring_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ring_wrap .ring_title {
+  text-align: center;
+}
+
+.ring_title h3 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #252ed5;
+  margin-bottom: 20px;
+}
+
+.ring_title p {
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+
+/* 푸터 */
+footer {
+  padding: 60px 0 80px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .footer-logo {
+  height: 39px;
+}
+
+.footer-logo img {
+  height: 39px;
+  display: block;
+}
+
+footer .copy {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+footer .copy P {
+  position: relative;
+}
+
+footer .copy P~p::after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+
+  position: absolute;
+  left: -8px;
+  top: 4px;
+}
+
+footer .contact {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2;
+}
+
+.contact h4 {
+  color: rgb(199, 202, 244);
+}
+
+.contact p {
+  font-size: 14px;
+}
+
+footer .sns {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.sns i {
+  font-size: 22px;
+  color: rgb(199, 202, 244);
+}
+
+.sns i:hover {
+  color: #fff;
+}

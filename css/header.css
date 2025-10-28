@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* 상단 바 */
+header.default {
+  width: 100%;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  height: 81px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.default nav ul.gnb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.default .gnb li {
+  height: 40px;
+
+  position: relative;
+}
+
+.default .gnb>li.menu:hover>a {
+  color: rgb(199, 202, 244);
+}
+
+.default .gnb>li>a {
+  font-family: 'Aharoni';
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 40px;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.default .gnb .sub_menu {
+  font-family: 'Aharoni';
+  font-weight: 600;
+  line-height: 40px;
+
+
+  background-color: #fff;
+  border-radius: 8px;
+
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  display: none;
+}
+
+.default .sub_menu li {
+  width: 158px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.default .sub_menu li:hover {
+  background-color: #6379ff;
+}
+
+.default .sub_menu li a {
+  color: #252ed5;
+}
+
+.default .sub_menu li:hover a {
+  color: #fff;
+}
+
+.default .sub_menu li~li {
+  border-top: 1px solid #e5e7eb;
+}
+
+.default h1.logo {
+  width: 56px;
+}
+
+.default .logo a {
+  width: 100%;
+  color: #fff;
+}
+
+.default .logo a img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.default .login {
+  display: flex;
+  flex: row;
+}
+
+.default .login p {
+  margin: 0 7.5px
+}
+
+.default .login p a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.default .login p:hover a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header active */
+header.active {
+  background-color: #fff;
+
+  display: none;
+}
+
+.active .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active .logo {
+  width: 240px;
+  height: 40px;
+}
+
+.active .logo a {
+  width: 100%;
+}
+
+.active .logo a img {
+  width: 100%;
+}
+
+.active .gnb {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.active .gnb>li {
+  padding: 0px 20px;
+}
+.active .gnb>li a {
+  font-size: 14px;
+}
+
+.active .gnb>li ul.sub_menu {
+  position: absolute;
+  left: 0;
+  top:48px;
+  background-color: #282828;
+  border-radius: 8px;
+  z-index: 9999;
+
+  display: none;
+}
+
+.active .gnb>li ul.sub_menu li {
+  width: 158px;
+  text-align: center;
+}
+.active .gnb>li ul.sub_menu li a {
+  padding: 20px;
+  color: #fff;
+}
+
+.active .login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.active .login a {
+  font-size: 14px;
+}
