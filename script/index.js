@@ -1,7 +1,7 @@
 
 $(function () {
   $(function () {
-    $("#header").load("header.html", function () {
+    $("#header").load("/smart/header.html", function () {
       // 메뉴 드롭다운 이벤트
       $('.menu').mouseenter(function () {
         $(this).find('.sub_menu').stop(true, true).slideDown();
