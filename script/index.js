@@ -1,7 +1,7 @@
 
 $(function () {
   $(function () {
-    $("#header").load("/smart/header.html", function () {
+    $("#header").load("../header.html", function () {
       // 메뉴 드롭다운 이벤트
       $('.menu').mouseenter(function () {
         $(this).find('.sub_menu').stop(true, true).slideDown();
@@ -26,7 +26,7 @@ $(function () {
       }).trigger('scroll');
     });
 
-    $('#footer').load("/smart/footer.html");
+    $('#footer').load("../footer.html");
   });
   $('.inside_box').css({
     top:0
