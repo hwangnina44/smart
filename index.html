@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/common.css">
@@ -14,55 +13,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script/jquery-1.7.2.min.js"></script>
+  <script src="script/common.js"></script>
   <script src="script/index.js"></script>
   <title>스마트글라스:퍼블리싱</title>
 </head>
 
 <body>
-  <header class="default">
-    <nav class="default">
-      <ul class="gnb">
-        <li class="menu"><a href="#">SHOP</a>
-          <ul class="sub_menu">
-            <li><a href="#">smart glasses</a></li>
-            <li><a href="#">smart ring</a></li>
-            <li><a href="#">acc</a></li>
-          </ul>
-        </li>
-        <li class="menu"><a href="#">ABOUT</a></li>
-      </ul>
-    </nav>
-    <h1 class="logo"><a href="index.html"><img src="images/logo.jpg" alt="한국스마트글라스"></a></h1>
-    <div class="login">
-      <p><a href="#">LOGIN</a></p>
-      <p><a href="#">SIGN IN</a></p>
-      <p><a href="#">CART</a></p>
-    </div>
-  </header>
-
-  <header class="active">
-    <div class="inner">
-      <h1 class="logo"><a href="index.html"><img src="images/logo_active" alt="한국스마트글라스"></a></h1>
-      <nav class="active">
-        <ul class="gnb">
-          <li class="menu"><a href="#">SHOP</a>
-            <ul class="sub_menu">
-              <li><a href="#">smart glasses</a></li>
-              <li><a href="#">smart ring</a></li>
-              <li><a href="#">acc</a></li>
-            </ul>
-          </li>
-          <li class="menu"><a href="#">ABOUT</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <a href="#" class="magnifying"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href="#" class="shopping">CART</a>
-        <a href="#" class="user">LOGIN</i></a>
-      </div>
-    </div>
-  </header>
-
+  <div id="header"></div>
   <section>
     <main class="banner">
 
@@ -86,12 +43,12 @@
       <div class="product_wrap">
         <div class="product_left">
           <div class="product_img">
-            <img src="images/main_product1" alt="스마트 링">
+            <img src="images/main_product1.jpg" alt="스마트 링">
           </div>
         </div>
         <div class="product_right">
           <div class="product_img">
-            <img src="images/main_product2" alt="스마트 글라스">
+            <img src="images/main_product2.jpg" alt="스마트 글라스">
           </div>
           <div class="product_des">
             <p>SMART GLASSES BRING THE FUNCTIONALITY</p>
@@ -103,7 +60,7 @@
     </article>
     <article class="glasses">
       <div class="glasses_img">
-        <img src="images/main_glasses" alt="스마트 글라스">
+        <img src="images/main_glasses.jpg" alt="스마트 글라스">
       </div>
       <div class="glasses_title">
         <h2>SMART GLASSES</h2>
@@ -122,21 +79,21 @@
         <ul>
           <li class="weekly_list">
             <div class="weekly_img">
-              <img src="images/weeklly_1" alt="스마트 글라스">
+              <img src="images/weeklly_1.jpg" alt="스마트 글라스">
             </div>
             <h3>SMART88778</h3>
             <p>890,000 won</p>
           </li>
           <li class="weekly_list">
             <div class="weekly_img ring">
-              <img src="images/weeklly_2" alt="스마트 링">
+              <img src="images/weeklly_2.jpg" alt="스마트 링">
             </div>
             <h3>SMART88778</h3>
             <p>890,000 won</p>
           </li>
           <li class="weekly_list">
             <div class="weekly_img">
-              <img src="images/weeklly_3" alt="스마트 글라스">
+              <img src="images/weeklly_3.jpg" alt="스마트 글라스">
             </div>
             <h3>SMART88778</h3>
             <p>890,000 won</p>
@@ -226,30 +183,7 @@
       </div>
     </article>
   </section>
-  <footer>
-    <div class="footer-logo">
-      <img src="images/logo_footer.jpg" alt="한국스마트글라스">
-    </div>
-    <div class="copy">
-      <p>(주) 한국스마트글라스</p>
-      <p>대표 전성찬</p>
-      <p>사업자등록번호 862-87-03798</p>
-      <p>서울특별시 성동구 성수일로 39-34, 서울숲더스페이스</p>
-    </div>
-    <div class="contact">
-      <h4>CONTACT</h4>
-      <p>e mail) vpink@vpink.kr</p>
-      <p>Tel ) 1811-8191 (유료)</p>
-    </div>
-    <div class="sns">
-      <div class="icon icon_facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </div>
-      <div class="icon icon_insta">
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
 </body>
 
 </html>

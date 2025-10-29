@@ -1,36 +1,36 @@
 
 $(function () {
-  const $headerDefault = $('header.default');
-  const $headerActive = $('header.active');
+  $(function () {
+    $("#header").load("/header.html", function () {
+      // 메뉴 드롭다운 이벤트
+      $('.menu').mouseenter(function () {
+        $(this).find('.sub_menu').stop(true, true).slideDown();
+      }).mouseleave(function () {
+        $(this).find('.sub_menu').stop(true, true).slideUp();
+      });
 
-  // 스크롤 시 처리
-  $(window).on('scroll', function () {
-    const scrollY = $(this).scrollTop();
+      // header 스크롤 이벤트
+      const $headerDefault = $('header.default');
+      const $headerActive = $('header.active');
 
-    if (scrollY <= 10) {
-      $headerDefault.stop(true, true).fadeIn(200);
-      $headerActive.stop(true, true).fadeOut(200);
-    } else {
-      $headerDefault.stop(true, true).fadeOut(200);
-      $headerActive.stop(true, true).fadeIn(200);
-    }
-  }).trigger('scroll'); // ← 페이지 로드 시 한 번 실행 (초기 상태 맞춤)
-});
-$(function () {
-  //main banner >inside//
+      $(window).on('scroll', function () {
+        const scrollY = $(this).scrollTop();
+
+        if (scrollY <= 10) {
+          $headerDefault.stop(true, true).fadeIn(200);
+          $headerActive.stop(true, true).fadeOut(200);
+        } else {
+          $headerDefault.stop(true, true).fadeOut(200);
+          $headerActive.stop(true, true).fadeIn(200);
+        }
+      }).trigger('scroll');
+    });
+
+    $('#footer').load("/footer.html");
+  });
   $('.inside_box').css({
-    top: 0
+    top:0
   });
-
-  $('.gnb > li').mouseenter(function () {
-    $(this).children('ul.sub_menu').slideDown();
-  });
-
-  $('.gnb > li').mouseleave(function () {
-    $('ul.sub_menu').stop().slideUp();
-  });
-
-
 
   //main img >main product img 나타나기
   $(window).scroll(function () {
@@ -43,7 +43,6 @@ $(function () {
     var windowHeight = $(window).height();
 
     console.log(scrollY, windowHeight);
-
 
     if (scrollY + windowHeight > productTop + 100) {
       // 오른쪽 이미지 먼저 나타나기

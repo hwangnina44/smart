@@ -8,6 +8,7 @@ body {
   font-weight: 400;
 
   position: relative;
+  box-sizing: border-box;
 }
 
 header {
@@ -25,6 +26,213 @@ header {
   left: 0;
   top: 0;
   z-index: 9999;
+}
+header.default {
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.default nav ul.gnb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.default .gnb li {
+  height: 40px;
+  position: relative;
+}
+
+.default .gnb>li.menu:hover>a {
+  color: rgb(199, 202, 244);
+}
+
+.default .gnb>li>a {
+  font-family: 'Aharoni';
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 40px;
+  color: #fff;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+.default .gnb>li.on >a {
+  color: #6379ff;
+}
+
+.default .gnb .sub_menu {
+  font-family: 'Aharoni';
+  font-weight: 600;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  display: none;
+}
+
+.default .sub_menu li {
+  width: 158px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.default .sub_menu li:hover {
+  background-color: #6379ff;
+}
+
+.default .sub_menu li a {
+  color: #252ed5;
+}
+
+.default .sub_menu li:hover a {
+  color: #fff;
+}
+
+.default .sub_menu li~li {
+  border-top: 1px solid #e5e7eb;
+}
+
+.default h1.logo {
+  width: 56px;
+}
+
+.default .logo a {
+  width: 100%;
+  color: #fff;
+}
+
+.default .logo a img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.default .login {
+  display: flex;
+  flex: row;
+}
+
+.default .login p {
+  margin: 0 7.5px
+}
+
+.default .login p a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.default .login p:hover a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* header active */
+header.active {
+  background-color: #fff;
+
+  display: none;
+}
+
+.active .inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active .logo {
+  width: 240px;
+  height: 40px;
+}
+
+.active .logo a {
+  width: 100%;
+}
+
+.active .logo a img {
+  width: 100%;
+}
+
+.active .gnb {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+}
+
+.active .gnb>li {
+  padding: 0px 20px;
+  position: relative;
+}
+.active .gnb>li::after{
+  content:"";
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left:0;
+  bottom: -31px;
+}
+.active .gnb>li.on::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #6379ff;
+  position: absolute;
+  left: 0;
+  bottom: -31px;
+}
+
+.active .gnb>li a {
+  font-size: 14px;
+}
+
+.active .gnb>li ul.sub_menu {
+  position: absolute;
+  left: 0;
+  top: 48px;
+  background-color: #282828;
+  border-radius: 8px;
+  z-index: 9999;
+
+  display: none;
+}
+
+.active .gnb>li ul.sub_menu li {
+  width: 158px;
+  text-align: center;
+}
+
+.active .gnb>li ul.sub_menu li a {
+  padding: 20px;
+  color: #fff;
+}
+
+.active .login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.active .login a {
+  font-size: 14px;
+}
+
+section {
+  padding-top: 81px;
 }
 
 .inner {
@@ -47,4 +255,75 @@ a.btn:hover {
   background-color: #fff;
   color: #252ed5;
   border: 1px solid #c7caf4;
+}
+
+/* 푸터 */
+footer {
+  padding: 60px 0 80px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .footer-logo {
+  height: 39px;
+}
+
+.footer-logo img {
+  height: 39px;
+  display: block;
+}
+
+footer .copy {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+footer .copy P {
+  position: relative;
+}
+
+footer .copy P~p::after {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+
+  position: absolute;
+  left: -8px;
+  top: 4px;
+}
+
+footer .contact {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 2;
+}
+
+.contact h4 {
+  color: rgb(199, 202, 244);
+}
+
+.contact p {
+  font-size: 14px;
+}
+
+footer .sns {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.sns i {
+  font-size: 22px;
+  color: rgb(199, 202, 244);
+}
+
+.sns i:hover {
+  color: #fff;
 }

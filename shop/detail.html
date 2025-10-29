@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script/jquery-1.7.2.min.js"></script>
+  <script src="script/common.js"></script>
+  <script src="script/detail.js"></script>
+  <title>스마트글라스:상세페이지</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <section>
+    <div class="depth">
+      <ul class="lnb">
+        <li>home</li>
+        <li>shop</li>
+      </ul>
+    </div>
+    <article class="goo ds">
+      <div class="good_img">
+        <img src="/images/weeklly_1.jpg" alt="상품이미지">
+      </div>
+      <div class="goods_info">
+        <div>
+          <h2>SART RING <span>7438</span></h2>
+          <p class="price">199,000원</p>
+        </div>
+        <form action="#" method="post" id="productForm">
+          <table class="options">
+            <tr>
+              <th>배송비</th>
+              <td>무료(0원 이상 무료 배송)</td>
+            </tr>
+            <tr>
+              <th>배송방법</th>
+              <td>
+                <select name="type">
+                  <option value="택배">택배</option>
+                  <option value="방문수령">방문수령</option>
+                  <option value="퀵서비스">퀵서비스</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <div class="quantity_box">
+            <span class="label">수량</span>
+            <div class="qty_control">
+              <button type="button" class="minus">-</button>
+              <input type="text" class="qty" name="quantity" value="1">
+              <button type="button" class="plus">+</button>
+            </div>
+            <span class="line_price">199,000원</span>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
+  <div id="footer"></div>
+</body>
+
+</html>

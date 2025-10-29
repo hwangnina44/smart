@@ -29,8 +29,7 @@ article.inside {
   height: 294px;
   position: relative;
   background-color: #000;
-  overflow: hidden;
-
+  
 }
 
 article.inside .inside_box {
@@ -40,7 +39,7 @@ article.inside .inside_box {
   border-radius: 16px;
   position: absolute;
   left: 50%;
-  top: 100%;
+  top:100%;
   transform: translateX(-50%);
   transition: all 2s;
   text-align: center;
@@ -78,7 +77,12 @@ article.inside .inside_box {
   padding: 14px 22px;
   border-radius: 100px;
   letter-spacing: 1px;
-
+}
+.main_btn:hover {
+  background-color: #fff;
+  border-color: #e5e7eb;     
+  border-width: 1px;
+  color:#8063ff;
 }
 
 article.main_product {
@@ -400,73 +404,3 @@ article.ring {
   margin-bottom: 40px;
 }
 
-/* 푸터 */
-footer {
-  padding: 60px 0 80px;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-footer .footer-logo {
-  height: 39px;
-}
-
-.footer-logo img {
-  height: 39px;
-  display: block;
-}
-
-footer .copy {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-footer .copy P {
-  position: relative;
-}
-
-footer .copy P~p::after {
-  display: block;
-  content: "";
-  width: 1px;
-  height: 12px;
-  background-color: #fff;
-
-  position: absolute;
-  left: -8px;
-  top: 4px;
-}
-
-footer .contact {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 2;
-}
-
-.contact h4 {
-  color: rgb(199, 202, 244);
-}
-
-.contact p {
-  font-size: 14px;
-}
-
-footer .sns {
-  display: flex;
-  flex-direction: row;
-  gap: 26px;
-}
-
-.sns i {
-  font-size: 22px;
-  color: rgb(199, 202, 244);
-}
-
-.sns i:hover {
-  color: #fff;
-}
