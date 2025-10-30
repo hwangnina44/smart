@@ -1,6 +1,6 @@
 
 $(function () {
-  $("#header").load("../../header.html", function () {
+  $("#header").load("/smart/header.html", function () {
     // 메뉴 드롭다운 이벤트
     $('.menu').mouseenter(function () {
       $(this).find('.sub_menu').stop(true, true).slideDown();
@@ -28,7 +28,7 @@ $(function () {
     $('header.active').find('.menu').first().addClass('on');
   });
 
-  $('#footer').load("../../footer.html");
+  $('#footer').load("/smart/footer.html");
 
   //상품클릭시 이동
   $('.shop_list li').on('click',function(){
