@@ -32,8 +32,6 @@ article.shop_list {
 
 .shop_list ul li {
   width: calc((100% - (24px * 3)) / 4);
-  outline: 1px solid red;
-
   text-align: center;
   cursor: pointer;
 }
