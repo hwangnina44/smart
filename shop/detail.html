@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script/jquery-1.7.2.min.js"></script>
+  <script src="script/common.js"></script>
+  <script src="script/detail.js"></script>
+  <title>스마트글라스:상세페이지</title>
+</head>
+
+<body>
+  <div id="header"></div>
+  <section>
+    <div class="depth">
+      <ul class="lnb">
+        <li><a href="/index.html">Home</a><span><i class="fa-regular fa-greater-than"></i></span></li>
+        <li><a href="/shop/shop.html">SHOP</a></li>
+      </ul>
+    </div>
+
+    <article class="product_info">
+      <div class="product_img">
+        <img src="/images/weeklly_1.jpg" alt="상품이미지">
+      </div>
+      <div class="product_purchase">
+        <div class="product_title">
+          <h2>SART RING <span>7438</span></h2>
+          <p class="price">199,000원</p>
+          <button><i>공유</i></button>
+        </div>
+
+        <form action="#" method="post" id="productForm">
+          <p class="coutier">배송비 <span>무료 (0원 이상 무료배송)</span></p>
+          <p class="qiuk hidden">배송비 <span>착불</span></p>
+          <!-- 배송방식 -->
+          <div class="product_select">
+            <select name="delivery" id="delivery">
+              <option value="coutier">택배</option>
+              <option value="pickup">방문수령</option>
+              <option value="qiuck">퀵서비스</option>
+            </select>
+            <select name="pay" id="pay" class="pay">
+              <option value="prepaid">배송비 (선결제)</option>
+              <option value="cash_on_delivery">배송비(착불)</option>
+            </select>
+            <button class="vist_btn">위치확인</button>
+          </div>
+          <!-- 수량선택 -->
+          <div class="product_quantity">
+            <p>수량</p>
+            <div class="quantity_wrap">
+              <div class="quantity_control">
+                <button type="button" class="qty_btn minus">-</button>
+                <input type="number" name="quantity" value="1" min="1" max="10">
+                <button type="button" class="qty_btn plus">+</button>
+              </div>
+              <p class="product-total"><span id="totalPrice">₩199,000</span></p>
+            </div>
+          </div>
+          <!--total -->
+          <div class="total_box">
+            <p class="total_text">총 상품금액(<span id="totalCount">1</span>개)</p>
+            <p class="total_price"><span id="totalPrice">199,000</span>원</p>
+          </div>
+          <!-- button -->
+          <div class="button_group">
+            <button type="submit" class="btn_buy">구매하기</button>
+            <button type="button" class="btn_cart">장바구니</button>
+            <button type="button" class="btn_like">
+              <span class="icon-heart" aria-hidden="true">♡</span> <span class="like-count">0</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </article>
+  </section>
+  <div id="footer"></div>
+</body>
+
+</html>

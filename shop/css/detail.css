@@ -1,4 +1,203 @@
-@charset  "utf-8";
+@charset "utf-8";
+
 section {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: -81px;
   padding-bottom: 1200px;
+}
+
+.depth {
+  padding: 20px;
+}
+
+.depth .lnb {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+
+}
+
+.depth .lnb li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.depth .lnb li:first-child a {
+  color: #d9d9d9;
+}
+
+.lnb li i {
+  font-size: 12px;
+  color: #d9d9d9d9;
+  display: block;
+}
+
+/* 상품 정보 */
+
+article.product_info {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  padding: 60px 0;
+}
+
+article.product_info>div {
+  width: 50%;
+}
+
+.product_info .product_img img {
+  width: 100%;
+  display: block;
+}
+
+.product_purchase .product_title {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.product_purchase .product_title h2 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.product_title .price {
+  font-size: 20px;
+  color: var(--text--color);
+}
+
+.product_title button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+form {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form>p {
+  font-size: 12px;
+}
+
+form>p span {
+  color: #333;
+  margin-left: 4px;
+}
+
+form .product_select select {
+  width: 130px;
+  height: 38px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  appearance: none;
+  border-color: #d9d9d9;
+}
+
+.product_select select option {
+  font-size: 14px;
+  color: #222;
+}
+
+/* 상품구매 > 수량 */
+form .product_quantity {
+  padding: 15px 15px 20px;
+  background-color: rgba(34, 34, 34, 0.03);
+}
+
+.product_quantity>p {
+  font-size: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.product_quantity .quantity_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+form .product_quantity .quantity_control {
+  display: flex;
+  width: 100px;
+  height: 27px;
+}
+
+.quantity_control button {
+  width: 24px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.quantity_control input {
+  text-align: center;
+  font-size: 14px;
+  width: 50px;
+  height: 32px;
+  margin: 0;
+  border: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 총 금 액 */
+form .total_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.total_box .total_text {
+  font-size: 14px;
+  color: rgba(34, 34, 34, 0.7);
+}
+
+.total_box .total_price {
+  font-size: 20px;
+}
+
+/* 버튼 그룹 */
+form .button_group {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.button_group button {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 0;
+  transition: all 0.8s ease;
+}
+.button_group button:hover {
+  border-color: #333;
+}
+
+.button_group button[type=submit] {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+  background-color: var(--sub--color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 0;
 }
