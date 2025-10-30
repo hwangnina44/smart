@@ -32,7 +32,7 @@ $(function () {
 
   //상품클릭시 이동
   $('.shop_list li').on('click',function(){
-    window.location.href = 'detail.html';
+    window.location.href = '/smart/shop/detail.html';
   });
 });
 
