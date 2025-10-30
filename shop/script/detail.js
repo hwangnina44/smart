@@ -1,6 +1,6 @@
 $(function(){
   //헤더 불러오기
-  $('#header').load('/header.html',function(){
+  $('#header').load('/smart/header.html',function(){
     $('header').find('.menu').first().addClass('on');
     $('header').css({
       position: 'static'
@@ -8,7 +8,7 @@ $(function(){
   });
 
   //푸터 로드
-  $('#footer').load('/footer.html');
+  $('#footer').load('/smart/footer.html');
 
   // 배송방법에 따라 결제 방식 옵션 변경
   $('#shipping_type').on('change', function () {
