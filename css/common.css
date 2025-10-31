@@ -1,8 +1,22 @@
 @charset "utf-8";
 
+:root {
+  --main--color: #6379ff;
+  --sub--color: rgb(37, 46, 213);
+  --footer--color: rgb(199, 202, 244);
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  background-color: transparent;
+}
+
 body {
   width: 100%;
-  color: #333;
+  color: #000;
   background-color: #fff;
   font-family: 'Pretendard';
   font-weight: 400;
@@ -27,6 +41,7 @@ header {
   top: 0;
   z-index: 9999;
 }
+
 header.default {
   margin: 0 auto;
   color: #fff;
@@ -64,7 +79,8 @@ header.default {
   border-style: solid;
   border-color: #e5e7eb;
 }
-.default .gnb>li.on >a {
+
+.default .gnb>li.on>a {
   color: #6379ff;
 }
 
@@ -174,16 +190,18 @@ header.active {
   padding: 0px 20px;
   position: relative;
 }
-.active .gnb>li::after{
-  content:"";
+
+.active .gnb>li::after {
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
 
   position: absolute;
-  left:0;
+  left: 0;
   bottom: -31px;
 }
+
 .active .gnb>li.on::after {
   content: "";
   display: block;
@@ -244,7 +262,7 @@ section {
 a.btn {
   display: inline-block;
   color: #fff;
-  background-color: #252ed5;
+  background-color: var(--sub--color);
   border-radius: 100px;
   font-size: 14px;
   padding: 10px 25px;
@@ -253,7 +271,7 @@ a.btn {
 
 a.btn:hover {
   background-color: #fff;
-  color: #252ed5;
+  color: var(--sub--color);
   border: 1px solid #c7caf4;
 }
 
@@ -306,7 +324,7 @@ footer .contact {
 }
 
 .contact h4 {
-  color: rgb(199, 202, 244);
+  color: var(--footer--color);
 }
 
 .contact p {
@@ -321,9 +339,10 @@ footer .sns {
 
 .sns i {
   font-size: 22px;
-  color: rgb(199, 202, 244);
+  color: var(--footer--color);
 }
 
 .sns i:hover {
   color: #fff;
 }
+

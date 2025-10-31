@@ -66,7 +66,7 @@ article.product_info>div {
 
 .product_title .price {
   font-size: 20px;
-  color: var(--text--color);
+  color: var(--main--color);
 }
 
 .product_title button {
@@ -178,6 +178,7 @@ form .button_group {
   flex-direction: row;
   gap: 12px;
 }
+
 .button_group button {
   width: 100%;
   border: 1px solid #d9d9d9;
@@ -187,6 +188,7 @@ form .button_group {
   padding: 12px 0;
   transition: all 0.8s ease;
 }
+
 .button_group button:hover {
   border-color: #333;
 }
@@ -195,9 +197,13 @@ form .button_group {
   width: 100%;
   border: 1px solid #d9d9d9;
   border-radius: 100px;
-  background-color: var(--sub--color);
+  background-color: var(--main--color);
   color: #fff;
   font-size: 14px;
   font-weight: 700;
   padding: 12px 0;
+}
+
+.button_group button[type=submit]:hover {
+  background-color: var(--sub--color);
 }
